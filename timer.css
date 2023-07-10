@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    background-color: white;
+}
+
+img {
+    /* background-color: #091921; */
+    border-radius: 50%;
+    border: 20px solid rgba(0, 0, 0, 0.103);
+    box-shadow: 0 -15px 15px rgba(255, 255, 255,0.05),
+                inset 0 -15px 15px rgba(255, 255, 255,0.05)
+                0 15px 15px rgba(0, 0, 0,0.05),
+                inset 0 15px 15px rgba(0, 0, 0,0.05);
+    background-size: cover;
+}
+
+.spanOne{
+    width: 2px !important;
+    height: 170px;
+    background-color: yellowgreen;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    border-radius: 10px;
+    animation: rotate 60s infinite linear ;
+    transform-origin: left 130px ;
+    transform: rotate(90deg) ;
+    z-index: 2;
+}
+
+.spanTwo{
+    width: 10px !important;
+    height: 90px;
+    background-color: black;
+    position: absolute;
+    top: 34%;
+    left: 49.6%;
+    border-radius: 5px;
+    transform: rotate(90deg);
+    transform-origin: bottom;
+}
+
+.spanTheree{
+    width: 5px !important;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 32%;
+    left: 49.9%;
+    border-radius: 5px;
+    /* transform: rotate(5deg); */
+    transform-origin: bottom;
+}
+
+.spanFour{
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    border-radius: 50%;
+    position: absolute;
+    top: 47.3%;
+    left: 49.25%;
+    z-index: 5;
+}
+
+@keyframes rotate{
+    from {
+        transform: rotateZ(0);
+        transform-origin: bottom  5px  ;
+    }
+
+    to{
+        transform: rotateZ(360deg);
+        transform-origin: bottom  5px  ;
+    }
+}
